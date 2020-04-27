@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   var svg = d3.select('#d3_selectable_force_directed_graph');
 
-  d3.json('http://localhost:8081/relations_sahure.json', function(error, graph) {
+  d3.json('https://storage.googleapis.com/json_network/relations_sahure.json', function(error, graph) {
       if (!error) {
           //console.log('graph', graph);
           createV4SelectableForceDirectedGraph(svg, graph);
